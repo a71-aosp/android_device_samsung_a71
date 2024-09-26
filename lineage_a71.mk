@@ -7,24 +7,23 @@
 # Inherit from a71 device
 $(call inherit-product, device/samsung/a71/device.mk)
 
-# Inherit some common RisingOS stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_a71
+PRODUCT_NAME := lineage_a71
 PRODUCT_DEVICE := a71
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A715
 PRODUCT_MANUFACTURER := samsung
 
-# RisingOS flags
-RISING_MAINTAINER := whystarlix
+# Matrixx
+MATRIXX_MAINTAINER := whystarlix?
+MATRIXX_CHIPSET := SM7150
+MATRIXX_BATTERY := 4500mAh
+MATRIXX_DISPLAY := 1080x2400
+WITH_GMS := false
 TARGET_ENABLE_BLUR := true
-PRODUCT_NO_CAMERA := false
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Qualcomm Snapdragon 730" \
-    RISING_MAINTAINER="whystarlix"
 
 # Use the latest approved GMS identifiers
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
