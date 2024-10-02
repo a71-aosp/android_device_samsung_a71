@@ -17,6 +17,10 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A715
 PRODUCT_MANUFACTURER := samsung
 
+# PixysOS flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_CALL_RECORDING := true
+
 # Use the latest approved GMS identifiers
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
