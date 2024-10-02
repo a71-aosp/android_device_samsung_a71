@@ -19,6 +19,10 @@ PRODUCT_MANUFACTURER := samsung
 
 # PixysOS flags
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := true
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
 
 # Use the latest approved GMS identifiers
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
