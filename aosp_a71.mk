@@ -8,7 +8,7 @@
 $(call inherit-product, device/samsung/a71/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_a71
@@ -16,6 +16,10 @@ PRODUCT_DEVICE := a71
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A715
 PRODUCT_MANUFACTURER := samsung
+
+# ArrowOS Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+DEVICE_MAINTAINER := whystarlix
 
 # Use the latest approved GMS identifiers
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
