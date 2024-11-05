@@ -7,11 +7,13 @@
 # Inherit from a71 device
 $(call inherit-product, device/samsung/a71/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+EXTRA_UDFPS_ICONS := true
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_a71
+PRODUCT_NAME := derp_a71
 PRODUCT_DEVICE := a71
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A715

@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_a71.mk
+    $(LOCAL_DIR)/derp_a71.mk
