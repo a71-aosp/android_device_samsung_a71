@@ -22,10 +22,9 @@ PRODUCT_MANUFACTURER := samsung
 # Use the latest approved GMS identifiers
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
+# Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="a71naxx-user 13 TP1A.220624.014 A715FXXSBDXB1 release-keys" \
-    PRODUCT_DEVICE=a71 \
-    PRODUCT_NAME=a71naxx \
-    TARGET_BOOTLOADER_BOARD_NAME=sm6150 \
-
-BUILD_FINGERPRINT := "samsung/a71naxx/qssi:13/TP1A.220624.014/A715FXXSBDXB1:user/release-keys"
+    BuildDesc="a71naxx-user 13 TP1A.220624.014 A715FXXSBDXB1 release-keys" \
+    BuildFingerprint=samsung/a71naxx/qssi:13/TP1A.220624.014/A715FXXSBDXB1:user/release-keys \
+    DeviceProduct=a71naxx \
+    SystemName=a71naxx
